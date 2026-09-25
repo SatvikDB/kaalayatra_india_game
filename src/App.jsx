@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import HeaderHUD from './components/HeaderHUD';
 import IntroScreen from './screens/IntroScreen';
 import BharatMapScreen from './screens/BharatMapScreen';
@@ -107,6 +108,7 @@ export default function App() {
           )}
         </main>
       </div>
+      <Analytics />
     </div>
   );
 }
